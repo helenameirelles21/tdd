@@ -26,10 +26,10 @@ describe('teste da calculadora', () => {
         let resultado = calculadora.sub(1, 2);
         expect(resultado).toEqual(-1);
 
-        resultado = calculadora.sub(3, 2);
+        resultado = calculadora.sub(2, 3);
         expect(resultado).toEqual(-1);
 
-        resultado = calculadora.sub(2, 0);
+        resultado = calculadora.sub(0, 2);
         expect(resultado).toEqual(-2);
 
         resultado = () => calculadora.sub("a", 2);
